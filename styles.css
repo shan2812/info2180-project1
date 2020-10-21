@@ -16,6 +16,11 @@ header{
     font-size: 18px;
     text-align: left;
 }
+img{
+   display: block;
+   width: 200px;
+   height: 200px;
+}
 h2{
     font-size: 24px;
     color: #48BB78;
@@ -43,12 +48,22 @@ li a{
 li a:hover{
     background-color: #5A67D8;
 }
+.container > .cards{
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+}
+.cards{
+    float: inherit;
+    width: 30%;
+    padding: 10px 30px;
+    
+}
 .card{
     background-color: blue;
     padding: 20px;
     margin-top: 20px;
     box-shadow: 0 8px 16px 0;
     text-align: center;
-
-
 }
+
