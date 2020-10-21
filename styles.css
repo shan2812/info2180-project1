@@ -15,9 +15,6 @@ header{
     background-color: white;
     font-size: 18px;
 }
-a{
-    color: #6b7280;
-}
 h2{
     font-size: 24px;
     color: #5A67D8;
@@ -25,4 +22,22 @@ h2{
 h3{
     font-size: 21px;
     color: #48BB78;
+}
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+li{
+    float: right;
+}
+li a{
+    display: block;
+    color: #6b7280;
+    text-align: center;
+    padding: 16px;
+}
+li a:hover{
+    background-color: #5A67D8;
 }
