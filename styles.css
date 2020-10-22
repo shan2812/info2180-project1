@@ -14,30 +14,13 @@ html{
 header{
     background-color: white;
     overflow: hidden;
-    padding: 20px 10px;
+    padding: 40px;
     font-size: 18px;
-    text-align: left;
 }
 header > .container > h1{
     font-size: 18px;
-}
-.overview-hero-image{
-    display: inline-flex;
-    width: 200px;
-    flex-wrap: wrap;
-}
-img{
-   display: block;
-   width: 200px;
-   height: 200px;
-}
-.learn-about > .container > h2{
-    font-size: 24px;
-    color: #48BB78;
-}
-.card > .card-body > h3{
-    font-size: 21px;
-    color: #48BB78;
+    display: flex;
+    float: left;
 }
 ul{
     list-style-type: none;
@@ -46,18 +29,28 @@ ul{
     overflow: hidden;
 }
 li{
+    display: flex;
     float: right;
 }
 li a{
-    display: block;
     font-weight: bold;
     color: #6b7280;
-    text-align: center;
     padding: 16px;
     text-decoration: none;
 }
 li a:hover{
     color: #5A67D8;
+}
+.overview-hero > .container{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 250px;
+    justify-content: center;
+    padding: 20px;
+}
+.overview-hero-image{
+    width: 100px;
+    height: 100px; 
 }
 .container > .cards{
     box-sizing: border-box;
@@ -67,21 +60,51 @@ li a:hover{
     grid-column-gap: 20px;
 }    
 .card{
-    padding: 20px;
+    padding: 30px;
     margin-top: 20px;
-    box-shadow: 0px 1px 1px 0px;
+    margin-bottom: 20px;
     text-align: center;
+    box-shadow: 0px 1px 2px 0px;
+    border:1px;
     border-color: #E2E8F0;
-    border-style: solid;
     border-radius: 5px;
 }
-.container > .testing-description{
+.card > img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+    height: 200px;
+ }
+.learn-about > .container > h2{
+    font-size: 24px;
+    color: #48BB78;
+}
+.card > .card-body > h3{
+    font-size: 21px;
+    color: #48BB78;
+}
+.testing > .container{
+    display: flex;
     background-color: #4A5568;
     color: white;
+    padding: 100px;
+    justify-content: center;
+    column-gap: 100px;
+}
+.container > .testing-description{
+    text-align: justify;
 }
 .cta{
     background-color: #48BB78;
     border-radius: 5px;
+    padding: 20px 150px;
+    margin: 50px 50px;
+}
+.btn{
+    text-decoration: none;
+    color: white;
+    font-size: large;
 }
 .stories > .container >h2{
     color: #5A67D8;
