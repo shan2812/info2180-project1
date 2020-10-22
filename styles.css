@@ -18,7 +18,7 @@ header{
     font-size: 18px;
     text-align: left;
 }
-h1{
+header > .container > h1{
     font-size: 18px;
 }
 .overview-hero-image{
@@ -31,11 +31,11 @@ img{
    width: 200px;
    height: 200px;
 }
-h2{
+.learn-about > .container > h2{
     font-size: 24px;
     color: #48BB78;
 }
-h3{
+.card > .card-body > h3{
     font-size: 21px;
     color: #48BB78;
 }
@@ -83,5 +83,26 @@ li a:hover{
     background-color: #48BB78;
     border-radius: 5px;
 }
-
-
+.stories > .container >h2{
+    color: #5A67D8;
+}
+.article-body a{
+    color: #5A67D8;
+}
+.article-body > h3{
+    font-size: 18px;
+}
+article > img{
+    border-radius: 50%;
+}
+.newsletter > .container{
+    background-color: #48BB78;
+    color: white;
+}
+form > button{
+    background-color: #5A67D8;
+}
+footer{
+    background-color: #4A5568;
+    color: white;
+}
