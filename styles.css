@@ -7,12 +7,12 @@ body {
     margin: 0 auto;
     max-width: 960px;
     width: 100%;
-    background-color: pink;
 }
 header > .container{
     background-color: white;
     overflow: hidden;
     padding: 20px;
+    justify-content: center;
 }
 header > .container > h1{
     font-size: 18px;
@@ -91,9 +91,6 @@ li a:hover{
     color: white;
     padding: 20px;
 }
-.article-body{
-    padding: 50px;
-}
 .cta{
     background-color: #48BB78;
     border-radius: 5px;
@@ -108,12 +105,8 @@ li a:hover{
 }
 article{
     display: flex;
-    column-gap: 20px;
-    padding-left: 40px;
-    padding-right: 80px;
-}
-.article-body{
-    float: right;
+    column-gap: 50px;
+    margin-bottom: 20px;
 }
 .stories > .container{
     padding: 20px;
@@ -121,7 +114,6 @@ article{
 .stories > .container >h2{
     color: #5A67D8;
     margin-top: 80px;
-    padding-left: 80px;
 }
 .article-body a{
     color: #5A67D8;
@@ -134,8 +126,6 @@ article > img{
     width:200px;
     height: 200px;
     border-radius: 50%;
-    float: left;
-    padding:30px;
 }
 .newsletter > .container{
     align-items: center;
@@ -144,20 +134,26 @@ article > img{
     color: white;
     padding: 20px;
 }
+.newsletter > .container >p{
+    padding-left: 235px;
+    padding-right: 235px;
+    text-align: left;
+}
+form{
+    display: flex;
+    justify-content: center;
+    column-gap: 10px;
+    margin-bottom: 40px;
+}
 div > input{
     border-radius: 5px;
-    padding: 20px 50px;
-    display: flex;
-    float: left;
+    padding: 20px 60px;
+    font-size: 18px;
 }
 form > button{
     background-color: #5A67D8;
-    padding: 15px 10px;
+    padding: 5px 10px;
     border-radius: 5px;
-}
-.form-group{
-    display: flex;
-    justify-content: center;
 }
 footer > .container{
     background-color: #4A5568;
