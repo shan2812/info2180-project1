@@ -1,45 +1,43 @@
 body {
     margin: 0;
-    font-size: 16px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif;
+    font-size: 18px;
 }
 .container {
     margin: 0 auto;
     max-width: 960px;
     width: 100%;
+    background-color: pink;
 }
-html{
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif;
-    font-size: 18px;
-}
-header{
+header > .container{
     background-color: white;
     overflow: hidden;
-    padding: 40px;
-    font-size: 18px;
+    padding: 20px;
 }
 header > .container > h1{
     font-size: 18px;
     display: flex;
-    float: left;
+    float: left;    
+    padding: 6px;
 }
 ul{
     list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-}
-li{
     display: flex;
     float: right;
 }
 li a{
+    font-size: 18px;
     font-weight: bold;
     color: #6b7280;
-    padding: 16px;
+    padding: 10px;
     text-decoration: none;
 }
 li a:hover{
     color: #5A67D8;
+}
+.learn-about > .container > h2{
+    font-size: 24px;
+    color: #48BB78;
 }
 .overview-hero > .container{
     display: grid;
@@ -48,9 +46,15 @@ li a:hover{
     justify-content: center;
     padding: 20px;
 }
-.overview-hero-image{
+.container > .overview-hero-image{
     width: 100px;
     height: 100px; 
+}
+.container > .overview-hero-text{
+    display: block;
+}
+.learn-about > .container{
+    padding: 20px;
 }
 .container > .cards{
     box-sizing: border-box;
@@ -60,14 +64,18 @@ li a:hover{
     grid-column-gap: 20px;
 }    
 .card{
-    padding: 30px;
+    padding: 20px;
     margin-top: 20px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     text-align: center;
     box-shadow: 0px 1px 2px 0px;
     border:1px;
     border-color: #E2E8F0;
     border-radius: 5px;
+}
+.card > .card-body > h3{
+    font-size: 21px;
+    color: #48BB78;
 }
 .card > img{
     display: block;
@@ -76,48 +84,44 @@ li a:hover{
     width: 200px;
     height: 200px;
  }
-.learn-about > .container > h2{
-    font-size: 24px;
-    color: #48BB78;
-}
-.card > .card-body > h3{
-    font-size: 21px;
-    color: #48BB78;
-}
 .testing > .container{
-    display: flex;
+    display: grid;
+    grid-template-columns: auto auto;
     background-color: #4A5568;
     color: white;
-    padding: 100px;
-    justify-content: center;
-    column-gap: 100px;
+    padding: 20px;
 }
-.container > .testing-description{
-    text-align: justify;
+.article-body{
+    padding: 50px;
 }
 .cta{
     background-color: #48BB78;
     border-radius: 5px;
-    padding: 20px 150px;
-    margin: 50px 50px;
+    padding: 20px 50px;
+    margin: 60px 70px;
 }
 .btn{
     text-decoration: none;
     color: white;
     font-size: large;
+    text-align: center;
 }
 article{
     display: flex;
-    column-gap: 50px;
-    padding-bottom: 60px;
+    column-gap: 20px;
+    padding-left: 40px;
+    padding-right: 80px;
 }
 .article-body{
     float: right;
 }
+.stories > .container{
+    padding: 20px;
+}
 .stories > .container >h2{
     color: #5A67D8;
-    margin-top: 100px;
-    margin-bottom: 50px;
+    margin-top: 80px;
+    padding-left: 80px;
 }
 .article-body a{
     color: #5A67D8;
@@ -131,30 +135,33 @@ article > img{
     height: 200px;
     border-radius: 50%;
     float: left;
+    padding:30px;
 }
 .newsletter > .container{
-    display: block;
     align-items: center;
-   text-align: center;
+    text-align: center;
     background-color: #48BB78;
     color: white;
-    padding: 100px;
+    padding: 20px;
 }
 div > input{
     border-radius: 5px;
     padding: 20px 50px;
     display: flex;
     float: left;
-
 }
 form > button{
     background-color: #5A67D8;
     padding: 15px 10px;
-    display: flex;
-    float: inline-end;
+    border-radius: 5px;
 }
-footer{
+.form-group{
+    display: flex;
+    justify-content: center;
+}
+footer > .container{
     background-color: #4A5568;
     color: white;
     padding: 20px;
 }
+ 
