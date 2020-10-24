@@ -41,6 +41,7 @@ li a:hover{
 }
 .overview-hero > .container{
     display: grid;
+    background-color: #E2E8F0;
     grid-template-columns: auto auto;
     grid-gap: 250px;
     justify-content: center;
@@ -160,4 +161,8 @@ footer > .container{
     color: white;
     padding: 20px;
 }
- 
+.message{
+    color: #5A67D8;
+    font-weight: bolder;
+    text-decoration: wavy;
+}
