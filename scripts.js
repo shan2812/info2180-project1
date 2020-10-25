@@ -1,11 +1,13 @@
-/*function validate(){
-    var empt= document.forms[''][''].value;
-    if (empt==''){
-        alert();
-        return false;
+document.getElementsByClassName("btn").addEventListener("click",validemail());
+function validemail(){
+    var email, msg;
+    email = document.getElementsByClassName("btn").value;
+    if (email = ""){
+        msg = "Thank you! Your email address has been added to our mailing list!";
     }
-    alert('Please Enter a Valid Email Address.')
-    return true;*/
+    else{
+        msg = "Please enter a valid email address";
+    }
+    document.getElementsByClassName("message")[0].innerHTML = msg;
+}
 
-    var submit = document.getElementsByClassName('message');
-    document.getElementById('')
