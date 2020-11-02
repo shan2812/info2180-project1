@@ -1,13 +1,12 @@
-document.getElementsByClassName("btn").addEventListener("click",validemail());
-function validemail(){
-    var email, msg;
-    email = document.getElementsByClassName("btn").value;
-    if (email = ""){
-        msg = "Thank you! Your email address has been added to our mailing list!";
+function valid(){
+    var x = document.forms.length;
+    if(x !== ""){
+        alert("thanks");
     }
-    else{
-        msg = "Please enter a valid email address";
+    else {
+        alert("do over");
     }
-    document.getElementsByClassName("message")[0].innerHTML = msg;
 }
+var y = document.getElementsByClassName("message")[0].innerHTML= valid();
+document.getElementsByClassName("btn").addEventListener("click", y);
 
