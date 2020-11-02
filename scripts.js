@@ -9,4 +9,3 @@ function valid(){
 }
 var y = document.getElementsByClassName("message")[0].innerHTML= valid();
 document.getElementsByClassName("btn").addEventListener("click", y);
-
